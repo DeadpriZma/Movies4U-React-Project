@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Movies4U
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movies4U is a React-based movie browsing website that lets users search for movies, view movie information, and sort search results. I built this project to get more comfortable working with React, APIs, routing, and managing data in a frontend application.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* Search for movies using the OMDb API
+* Browse movie search results
+* Sort movies by:
 
-### `npm start`
+  * A-Z
+  * Z-A
+  * Oldest to Newest
+  * Newest to Oldest
+* View individual movie details
+* Display movie posters and fallback text when a poster isn't available
+* React Router navigation between the movie list and individual movie pages
+* Responsive layout for different screen sizes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* React
+* JavaScript
+* HTML
+* CSS
+* Axios
+* React Router
+* OMDb API
+* Git & GitHub
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How It Works
 
-### `npm run build`
+The movie list is populated using the OMDb API. When a user searches for a movie, the search term is sent to the API and the returned results are displayed on the page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Each movie can be selected to open a dedicated movie page. The movie's IMDb ID is passed through the URL, which is then used to request more detailed information from the OMDb API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the Project Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository:
 
-### `npm run eject`
+```bash
+git clone https://github.com/your-username/Movies4U.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Navigate into the project:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd Movies4U
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Install the dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+Create a `.env` file in the root of the project and add your OMDb API key:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```env
+REACT_APP_OMDB_API_URL=https://www.omdbapi.com/?apikey=YOUR_API_KEY
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Then start the development server:
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application should open at:
 
-### Analyzing the Bundle Size
+```text
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Status
 
-### Making a Progressive Web App
+This project was created as a learning project while I continue developing my React and frontend development skills.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Author
 
-### Advanced Configuration
+**Nathan Cader**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+GitHub: [@DeadpriZma](https://github.com/DeadpriZma)
