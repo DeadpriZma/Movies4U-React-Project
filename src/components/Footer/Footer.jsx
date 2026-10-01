@@ -15,7 +15,7 @@ const Footer = () => {
           <li className="footer__link">About</li>
         </div>
         <div className="footer__copyright">
-          <p>&copy; 2026 Movies4U. All rights reserved.</p>
+          <p>&copy; 2026 Movies4U. All rights reserved. NathanC's Movies.</p>
         </div>
       </ul>
     </div>
