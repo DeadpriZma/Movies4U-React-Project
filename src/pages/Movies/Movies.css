@@ -146,6 +146,7 @@ a{
   text-decoration:none;
   color:black;
   width:25%;
+  flex-wrap:wrap;
 }
 
 
@@ -173,10 +174,12 @@ RESPONSIVE DESIGN
   }
 
   .movie{
-  width:50%;
   padding: 0 6px;
   align-items: center;
-
   border: 1px black solid;
-}
+  }
+
+  a{
+    width:50%;
+  }
 }

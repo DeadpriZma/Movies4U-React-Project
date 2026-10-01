@@ -23,7 +23,7 @@ const MoviePage = () => {
   }
 
   fetchMovies();
-  }, []);
+  }, [id]);
 
 
   return (

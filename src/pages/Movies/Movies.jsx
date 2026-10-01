@@ -68,8 +68,9 @@ const Movies = () => {
     <img
       src={poster}
       className="Poster"
-      alt={title}
+      alt="movie poster"
       onError={() => setImageError(true)}
+      
     />
   );
 }
@@ -91,6 +92,7 @@ const Movies = () => {
                   <img
                     className="search__btn"
                     src="https://upload.wikimedia.org/wikipedia/commons/e/ef/ColordrawnIcons_Simple_magnifying_glass.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+                    alt="movie poster"
                   />
                 </button>
               </div>
